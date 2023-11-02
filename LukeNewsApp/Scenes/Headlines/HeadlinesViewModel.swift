@@ -43,15 +43,7 @@ class HeadlinesViewModel {
         )
         .subscribe(onNext: { [weak self] (headlines, savedArticles) in
             let articlesContents = headlines.map { headline in
-                ArticleCellContent(
-                    title: headline.title,
-                    description: headline.description,
-                    content: headline.content,
-                    url: headline.url,
-                    urlToImage: headline.urlToImage,
-                    publishedAt: headline.publishedAt,
-                    isSaved: savedArticles.contains(where: { $0.title == headline.title })
-                )}
+                headline.toArticleCellContent(isSaved: savedArticles.contains(where: { $0.title == headline.title }))}
             self?.content.accept(Content(headlineContents: articlesContents))
             self?.isLoading.accept(false)
         }, onError: { [weak self] error in

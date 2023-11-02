@@ -7,6 +7,8 @@
 
 import UIKit
 
+/// `LKAlertViewController` is a custom view controller that presents a stylized alert to the user.
+/// It contains a title, a message, and a button to dismiss the alert.
 class LKAlertViewController: UIViewController {
     let alertTitle: String
     let message: String
@@ -113,6 +115,8 @@ class LKAlertViewController: UIViewController {
     
 }
 
+/// `LKAlertContainerView` is a custom view designed to act as the container for an alert.
+/// It presents a stylized background for the contents of an alert box.
 class LKAlertContainerView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)

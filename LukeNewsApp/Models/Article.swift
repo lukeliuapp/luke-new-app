@@ -18,6 +18,20 @@ struct Article: Codable {
     let content: String?
 }
 
+extension Article {
+    func toArticleCellContent(isSaved: Bool) -> ArticleCellContent {
+        return ArticleCellContent(
+            title: self.title,
+            description: self.description,
+            content: self.content,
+            url: self.url,
+            urlToImage: self.urlToImage,
+            publishedAt: self.publishedAt,
+            isSaved: isSaved
+        )
+    }
+}
+
 struct ArticlesResponse: Codable {
     let status: String
     let totalResults: Int

@@ -15,7 +15,7 @@ protocol LKApiServiceProtocol {
 struct LKApiService: LKApiServiceProtocol {
     
     static let baseURL = "https://newsapi.org/v2/"
-    let apiKey = "c732a45447ba416f87855a5bee454c21"
+    let apiKey = "8a5acb219e1b4380848a73b08702a5f6"
     
     let httpClient: LKHttpClientProtocol
     

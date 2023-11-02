@@ -11,6 +11,7 @@ import SnapKit
 class LKLoadingViewController: UIViewController {
     lazy var containerView = UIView(frame: view.bounds)
     
+    /// Displays a loading view overlay with an activity indicator.
     func showLoadingView() {
         view.addSubview(containerView)
         
@@ -29,6 +30,7 @@ class LKLoadingViewController: UIViewController {
         activityIndicator.startAnimating()
     }
     
+    /// Removes the loading view overlay from the view hierarchy.
     func dismissLoadingView() {
         DispatchQueue.main.async {
             self.containerView.removeFromSuperview()
