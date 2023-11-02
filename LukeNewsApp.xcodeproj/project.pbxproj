@@ -255,6 +255,7 @@
 		062EAA4B2AF38107009AAE8B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				062EAA8C2AF381A4009AAE8B /* LKLoadingViewController.swift */,
 				062EAA502AF38107009AAE8B /* TabBar */,
 				062EAA4C2AF38107009AAE8B /* Headlines */,
 				062EAA532AF38107009AAE8B /* Sources */,
@@ -372,7 +373,6 @@
 		062EAA8B2AF381A4009AAE8B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				062EAA8C2AF381A4009AAE8B /* LKLoadingViewController.swift */,
 				062EAA8D2AF381A4009AAE8B /* LKAlertViewController.swift */,
 			);
 			path = ViewControllers;
