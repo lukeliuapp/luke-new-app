@@ -1,0 +1,6 @@
+framework module Pods_LukeNewsApp_LukeNewsAppUITests {
+  umbrella header "Pods-LukeNewsApp-LukeNewsAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
