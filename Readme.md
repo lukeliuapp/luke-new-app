@@ -31,6 +31,14 @@ This screen displays the news that the user has saved previously. Users can also
 
 ![Error Alert](Readme/erroralert.png)
 
+![Dark Mode](Readme/dark1.png)
+
+![Dark Mode](Readme/dark2.png)
+
+![Dark Mode](Readme/dark3.png)
+
+![Rotation](Readme/rotation1.png)
+
 ## Technologies
 
 ### Language
