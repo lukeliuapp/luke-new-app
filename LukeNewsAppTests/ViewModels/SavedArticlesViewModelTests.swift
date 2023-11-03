@@ -33,8 +33,8 @@ class SavedArticlesViewModelTests: XCTestCase {
     func testLoadData_withSavedArticles() {
         // Given
         let savedArticles = [
-            ArticleCellContent(title: "Article 1", description: "Description 1", content: nil, url: "https://example.com/1", urlToImage: nil, publishedAt: "2023-10-11T11:00:00Z", isSaved: true),
-            ArticleCellContent(title: "Article 2", description: "Description 2", content: nil, url: "https://example.com/2", urlToImage: nil, publishedAt: "2022-10-11T11:00:00Z", isSaved: true)
+            ArticleCellContent(title: "Article 1", description: "Description 1", author: "author 1", content: nil, url: "https://example.com/1", urlToImage: nil, publishedAt: "2023-10-11T11:00:00Z", isSaved: true),
+            ArticleCellContent(title: "Article 2", description: "Description 2", author: "author 2", content: nil, url: "https://example.com/2", urlToImage: nil, publishedAt: "2022-10-11T11:00:00Z", isSaved: true)
         ]
         
         mockSavedArticlesManager.savedArticles = savedArticles
@@ -58,7 +58,7 @@ class SavedArticlesViewModelTests: XCTestCase {
     
     func testRemoveSavedArticle() {
         // Given
-        let articleToRemove = ArticleCellContent(title: "Article 1", description: "Description 1", content: nil, url: "https://example.com/1", urlToImage: nil, publishedAt: "2023-10-11T11:00:00Z", isSaved: true)
+        let articleToRemove = ArticleCellContent(title: "Article 1", description: "Description 1", author: "author 1", content: nil, url: "https://example.com/1", urlToImage: nil, publishedAt: "2023-10-11T11:00:00Z", isSaved: true)
         mockSavedArticlesManager.savedArticles = [articleToRemove]
         
         // When

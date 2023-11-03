@@ -35,6 +35,7 @@ class ArticleListCell: UICollectionViewCell, ReusableView {
         
         titleLabel.text = content.title
         descriptionLabel.text = content.description ?? "Tap to see details"
+        authorLabel.text = content.author
         
         let dateText = content.publishedAt.formatDateToReadableStyle()
         dateLabel.text = dateText ?? "Unknown Date"
@@ -43,11 +44,11 @@ class ArticleListCell: UICollectionViewCell, ReusableView {
     }
     
     private func setupUI() {
-        contentView.addSubViews(articleImageView, titleLabel, descriptionLabel, dateLabel, separatorLine, saveButton)
+        contentView.addSubViews(articleImageView, titleLabel, authorLabel, descriptionLabel, dateLabel, separatorLine, saveButton)
         
         articleImageView.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(16)
-            make.size.equalTo(32)
+            make.size.equalTo(50)
             make.top.equalToSuperview().offset(18)
         }
         
@@ -57,11 +58,16 @@ class ArticleListCell: UICollectionViewCell, ReusableView {
             make.top.equalToSuperview().offset(16)
         }
         
-        descriptionLabel.snp.makeConstraints { make in
+        authorLabel.snp.makeConstraints { make in
             make.leading.trailing.equalTo(titleLabel)
             make.top.equalTo(titleLabel.snp.bottom).offset(8)
         }
         
+        descriptionLabel.snp.makeConstraints { make in
+            make.leading.trailing.equalTo(titleLabel)
+            make.top.equalTo(authorLabel.snp.bottom).offset(8)
+        }
+
         dateLabel.snp.makeConstraints { make in
             make.leading.trailing.equalTo(titleLabel)
             make.top.equalTo(descriptionLabel.snp.bottom).offset(8)
@@ -77,7 +83,7 @@ class ArticleListCell: UICollectionViewCell, ReusableView {
         
         saveButton.snp.makeConstraints { make in
             make.bottom.trailing.equalToSuperview()
-            make.size.equalTo(60)
+            make.size.equalTo(50)
         }
         
         saveButton.addTarget(self, action: #selector(tappedOnSaveButton), for: .touchUpInside)
@@ -104,6 +110,7 @@ class ArticleListCell: UICollectionViewCell, ReusableView {
         let label = UILabel()
         label.numberOfLines = 0
         label.textColor = .systemPink
+        label.font = .boldSystemFont(ofSize: 20)
         return label
     }()
     
@@ -114,10 +121,19 @@ class ArticleListCell: UICollectionViewCell, ReusableView {
         return label
     }()
     
+    private let authorLabel: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.textColor = .systemGray2
+        label.font = .systemFont(ofSize: 14)
+        return label
+    }()
+    
     private let dateLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.textColor = .systemGray
+        label.textColor = .systemGray2
+        label.font = .systemFont(ofSize: 14)
         return label
     }()
     

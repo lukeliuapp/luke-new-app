@@ -10,6 +10,7 @@ import Foundation
 struct ArticleCellContent: Hashable, Codable {
     let title: String
     let description: String?
+    let author: String?
     let content: String?
     let url: String
     let urlToImage: String?

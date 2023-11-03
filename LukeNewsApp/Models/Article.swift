@@ -23,6 +23,7 @@ extension Article {
         return ArticleCellContent(
             title: self.title,
             description: self.description,
+            author: self.author,
             content: self.content,
             url: self.url,
             urlToImage: self.urlToImage,
