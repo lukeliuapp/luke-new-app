@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project was developed as part of a coding challenge for an interview process. Within a span of two days, I endeavored to fulfill as many requirements provided by Medibank as possible. Any shortcomings are acknowledged, and I welcome constructive feedback at any time.
+This project was developed as part of a coding challenge for an interview process. Within a span of two days, I endeavored to fulfill as many requirements as possible. Any shortcomings are acknowledged, and I welcome constructive feedback at any time.
 
 This app perfectly supports night mode and also supports screen rotation.
 
