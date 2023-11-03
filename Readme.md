@@ -49,6 +49,10 @@ Swift
 
 MVVM
 
+### Data Persistence
+
+Currently, all data that requires saving is persisted using UserDefaults. I am well aware that UserDefaults is not the optimal choice for larger sets of data. Given more time, my plan would be to integrate the Realm database for robust data storage and to incorporate RxRealm for reactive data persistence operations.
+
 ### Libraries
 
 In this project, I deliberately limited the use of third-party libraries to showcase my proficiency in native UIKit development. The libraries included are essential and widely utilized across various companies. They are:
