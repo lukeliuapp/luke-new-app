@@ -49,6 +49,17 @@ Swift
 
 MVVM
 
+### UI Framework
+
+UIKit
+
+The three main screens were created using UICollectionView. Instead of the traditional `UICollectionViewDataSource`, I utilized `'UICollectionViewDiffableDataSource` to manage the data and provide updates to the UI. The benefits of using UICollectionViewDiffableDataSource include:
+
+- Simplified state management
+- Automatic handling of animations
+- Type safety and less boilerplate
+- Improved performance
+
 ### Data Persistence
 
 Currently, all data that requires saving is persisted using UserDefaults. I am well aware that UserDefaults is not the optimal choice for larger sets of data. Given more time, my plan would be to integrate the Realm database for robust data storage and to incorporate RxRealm for reactive data persistence operations.
