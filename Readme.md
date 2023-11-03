@@ -21,7 +21,7 @@ This screen displays the news that the user has saved previously. Users can also
 
 ## Screenshots
 
-![Headlines Screen](Readme/headlines.png)
+![Headlines Screen](Readme/headlines.png | width=200)
 
 ![Sources Screen](Readme/sources.png)
 
