@@ -35,7 +35,7 @@ class ArticleListCell: UICollectionViewCell, ReusableView {
         
         titleLabel.text = content.title
         descriptionLabel.text = content.description ?? "Tap to see details"
-        authorLabel.text = content.author
+        authorLabel.text = content.author ?? "Anonymous"
         
         let dateText = content.publishedAt.formatDateToReadableStyle()
         dateLabel.text = dateText ?? "Unknown Date"
