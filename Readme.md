@@ -21,23 +21,23 @@ This screen displays the news that the user has saved previously. Users can also
 
 ## Screenshots
 
-![Headlines Screen](Readme/headlines.png | width=200)
+<img src="Readme/headlines.png" width="250">
 
-![Sources Screen](Readme/sources.png)
+<img src="Readme/sources.png" width="250">
 
-![Saved Screen](Readme/saved.png)
+<img src="Readme/saved.png" width="250">
 
-![Loading](Readme/loading.png)
+<img src="Readme/loading.png" width="250">
 
-![Error Alert](Readme/erroralert.png)
+<img src="Readme/erroralert.png" width="250">
 
-![Dark Mode](Readme/dark1.png)
+<img src="Readme/dark1.png" width="250">
 
-![Dark Mode](Readme/dark2.png)
+<img src="Readme/dark2.png" width="250">
 
-![Dark Mode](Readme/dark3.png)
+<img src="Readme/dark3.png" width="250">
 
-![Rotation](Readme/rotation1.png)
+<img src="Readme/rotation1.png" width="250">
 
 ## Technologies
 
